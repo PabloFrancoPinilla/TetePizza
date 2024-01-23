@@ -9,7 +9,6 @@ using TetePizza.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -17,13 +16,15 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Pizza API", Version = "v1" });
 });
 
-
 builder.Services.AddSingleton<IIngredienteRepository, IngredienteRepository>();
 builder.Services.AddSingleton<IPizzaRepository, PizzaRepository>();
-
+builder.Services.AddSingleton<IPedidoRepository, PedidoRepository>();
+builder.Services.AddSingleton<IUserRepository, UserRepository>();
 
 builder.Services.AddScoped<IngredienteService>();
 builder.Services.AddScoped<PizzaService>();
+builder.Services.AddScoped<PedidoService>();
+builder.Services.AddScoped<UserService>();
 
 var app = builder.Build();
 
@@ -37,4 +38,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-

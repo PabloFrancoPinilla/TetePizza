@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using TetePizza.Models;
 using TetePizza.Service;
 
-namespace TetePizza.Controllers
-{
+namespace TetePizza.Controllers;
+
     [ApiController]
     [Route("[controller]")]
     public class IngredienteController : ControllerBase
@@ -64,4 +64,3 @@ namespace TetePizza.Controllers
             return NoContent();
         }
     }
-}
