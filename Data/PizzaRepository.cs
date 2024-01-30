@@ -7,7 +7,7 @@ namespace TetePizza.Data;
 public class PizzaRepository : IPizzaRepository
 {
     private List<Pizza> Pizzas { get; set; } = new List<Pizza>();
-    private int nextId = 3;
+    /* private int nextId = 3; */
     private readonly IIngredienteRepository _ingredienteRepository;
     public PizzaRepository(IIngredienteRepository ingredienteRepository)
     {
@@ -29,7 +29,7 @@ public class PizzaRepository : IPizzaRepository
 
     public void Add(Pizza pizza)
     {
-        pizza.Id = nextId++;
+        /* pizza.Id = nextId++; */
         Pizzas.Add(pizza);
     }
 
@@ -52,23 +52,23 @@ public class PizzaRepository : IPizzaRepository
     }
     public void AddIngredient(int pizzaId, int ingredienteId)
     {
-        var pizza = Pizzas.FirstOrDefault(p => p.Id == pizzaId);
+      /*   var pizza = Pizzas.FirstOrDefault(p => p.Id == pizzaId);
         var ingrediente = _ingredienteRepository.Get(ingredienteId);
 
         if (pizza != null && ingrediente != null)
         {
             pizza.PizzaIngredients.Add(ingrediente);
-        }
+        } */
     }
      public void DeleteIngredient(int pizzaId, int ingredienteId)
     {
-        var pizza = Pizzas.FirstOrDefault(p => p.Id == pizzaId);
+      /*   var pizza = Pizzas.FirstOrDefault(p => p.Id == pizzaId);
         var ingrediente = _ingredienteRepository.Get(ingredienteId);
 
         if (pizza != null && ingrediente != null)
         {
             pizza.PizzaIngredients.Remove(ingrediente);
-        }
+        } */
     }
 }
 

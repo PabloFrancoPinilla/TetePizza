@@ -15,11 +15,15 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Pizza API", Version = "v1" });
 });
+var connectionString = builder.Configuration.GetConnectionString("ServerDB");
+builder.Services.AddScoped<IPizzaRepository, PizzaSqlRepository>(serviceProvider => 
+    new PizzaSqlRepository(connectionString));
 
-builder.Services.AddSingleton<IIngredienteRepository, IngredienteRepository>();
-builder.Services.AddSingleton<IPizzaRepository, PizzaRepository>();
-builder.Services.AddSingleton<IPedidoRepository, PedidoRepository>();
-builder.Services.AddSingleton<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IIngredienteRepository, IngredienteSqlRepository>(serviceProvider => 
+    new IngredienteSqlRepository(connectionString));
+/* builder.Services.AddSingleton<IPizzaRepository, PizzaRepository>(); */
+builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddScoped<IngredienteService>();
 builder.Services.AddScoped<PizzaService>();

@@ -1,5 +1,7 @@
  using TetePizza.Models;
  namespace TetePizza.Data;
+
+ //La interfaz es un contrato
  public interface IPizzaRepository
     {
         List<Pizza> GetAll();

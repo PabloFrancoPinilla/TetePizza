@@ -63,6 +63,7 @@ namespace TetePizza.Controllers
 
             return NoContent();
         }
+
         [HttpPut("{id}/AddIngredient")]
         public IActionResult AddIngredient(int id, int ingredienteId)
         {
@@ -75,6 +76,7 @@ namespace TetePizza.Controllers
 
             return NoContent();
         }
+
         [HttpPut("{id}/DeleteIngredient")]
         public IActionResult DeleteIngredient(int id, int ingredienteId)
         {
