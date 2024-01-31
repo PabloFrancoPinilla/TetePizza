@@ -2,7 +2,7 @@ using TetePizza.Data;
 using TetePizza.Models;
 
 namespace TetePizza.Service;
-public class PedidoService
+public class PedidoService : IPedidoService
 {
     private readonly IPedidoRepository _pedidoRepository;
 

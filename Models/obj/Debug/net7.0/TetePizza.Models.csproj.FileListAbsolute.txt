@@ -10,3 +10,14 @@ D:\TetePizza\Models\obj\Debug\net7.0\TetePizza.Models.dll
 D:\TetePizza\Models\obj\Debug\net7.0\refint\TetePizza.Models.dll
 D:\TetePizza\Models\obj\Debug\net7.0\TetePizza.Models.pdb
 D:\TetePizza\Models\obj\Debug\net7.0\ref\TetePizza.Models.dll
+C:\Users\franc\Desktop\TetePizza\Models\bin\Debug\net7.0\TetePizza.Models.deps.json
+C:\Users\franc\Desktop\TetePizza\Models\bin\Debug\net7.0\TetePizza.Models.dll
+C:\Users\franc\Desktop\TetePizza\Models\bin\Debug\net7.0\TetePizza.Models.pdb
+C:\Users\franc\Desktop\TetePizza\Models\obj\Debug\net7.0\TetePizza.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Desktop\TetePizza\Models\obj\Debug\net7.0\TetePizza.Models.AssemblyInfoInputs.cache
+C:\Users\franc\Desktop\TetePizza\Models\obj\Debug\net7.0\TetePizza.Models.AssemblyInfo.cs
+C:\Users\franc\Desktop\TetePizza\Models\obj\Debug\net7.0\TetePizza.Models.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\TetePizza\Models\obj\Debug\net7.0\TetePizza.Models.dll
+C:\Users\franc\Desktop\TetePizza\Models\obj\Debug\net7.0\refint\TetePizza.Models.dll
+C:\Users\franc\Desktop\TetePizza\Models\obj\Debug\net7.0\TetePizza.Models.pdb
+C:\Users\franc\Desktop\TetePizza\Models\obj\Debug\net7.0\ref\TetePizza.Models.dll

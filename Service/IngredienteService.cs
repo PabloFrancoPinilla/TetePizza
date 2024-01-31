@@ -3,7 +3,7 @@ using TetePizza.Data;
 using TetePizza.Models;
 namespace TetePizza.Service;
 
-    public class IngredienteService
+    public class IngredienteService : IIngredienteService
 {
    private readonly IIngredienteRepository _IngredienteRepository;
 
