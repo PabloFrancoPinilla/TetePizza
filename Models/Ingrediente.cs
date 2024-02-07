@@ -9,5 +9,6 @@ public class Ingrediente
     public int? Stock { get; set; }
     public string Description { get; set; }
     public Boolean IsVegan { get; set; }
-
+    public int PizzaId{get;set;}
+    public Pizza Pizza {get;set;}
 }

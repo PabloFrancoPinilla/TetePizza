@@ -1,36 +1,43 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\franc\\Desktop\\TetePizza\\Api\\TetePizza.Api.csproj": {}
+    "D:\\TetePizza\\Api\\TetePizza.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\franc\\Desktop\\TetePizza\\Api\\TetePizza.Api.csproj": {
+    "D:\\TetePizza\\Api\\TetePizza.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franc\\Desktop\\TetePizza\\Api\\TetePizza.Api.csproj",
+        "projectUniqueName": "D:\\TetePizza\\Api\\TetePizza.Api.csproj",
         "projectName": "TetePizza.Api",
-        "projectPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Api\\TetePizza.Api.csproj",
-        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Api\\obj\\",
+        "projectPath": "D:\\TetePizza\\Api\\TetePizza.Api.csproj",
+        "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
+        "outputPath": "D:\\TetePizza\\Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\S2-PC00\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\franc\\Desktop\\TetePizza\\Data\\TetePizza.Data.csproj": {
-                "projectPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Data\\TetePizza.Data.csproj"
+              "D:\\TetePizza\\Data\\TetePizza.Data.csproj": {
+                "projectPath": "D:\\TetePizza\\Data\\TetePizza.Data.csproj"
               },
-              "C:\\Users\\franc\\Desktop\\TetePizza\\Service\\TetePizza.Service.csproj": {
-                "projectPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Service\\TetePizza.Service.csproj"
+              "D:\\TetePizza\\Service\\TetePizza.Service.csproj": {
+                "projectPath": "D:\\TetePizza\\Service\\TetePizza.Service.csproj"
               }
             }
           }
@@ -75,34 +82,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\franc\\Desktop\\TetePizza\\Data\\TetePizza.Data.csproj": {
+    "D:\\TetePizza\\Data\\TetePizza.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franc\\Desktop\\TetePizza\\Data\\TetePizza.Data.csproj",
+        "projectUniqueName": "D:\\TetePizza\\Data\\TetePizza.Data.csproj",
         "projectName": "TetePizza.Data",
-        "projectPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Data\\TetePizza.Data.csproj",
-        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Data\\obj\\",
+        "projectPath": "D:\\TetePizza\\Data\\TetePizza.Data.csproj",
+        "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
+        "outputPath": "D:\\TetePizza\\Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\S2-PC00\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\franc\\Desktop\\TetePizza\\Models\\TetePizza.Models.csproj": {
-                "projectPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Models\\TetePizza.Models.csproj"
+              "D:\\TetePizza\\Models\\TetePizza.Models.csproj": {
+                "projectPath": "D:\\TetePizza\\Models\\TetePizza.Models.csproj"
               }
             }
           }
@@ -117,6 +130,16 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"
@@ -138,26 +161,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\franc\\Desktop\\TetePizza\\Models\\TetePizza.Models.csproj": {
+    "D:\\TetePizza\\Models\\TetePizza.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franc\\Desktop\\TetePizza\\Models\\TetePizza.Models.csproj",
+        "projectUniqueName": "D:\\TetePizza\\Models\\TetePizza.Models.csproj",
         "projectName": "TetePizza.Models",
-        "projectPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Models\\TetePizza.Models.csproj",
-        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Models\\obj\\",
+        "projectPath": "D:\\TetePizza\\Models\\TetePizza.Models.csproj",
+        "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
+        "outputPath": "D:\\TetePizza\\Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\S2-PC00\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -191,37 +220,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\franc\\Desktop\\TetePizza\\Service\\TetePizza.Service.csproj": {
+    "D:\\TetePizza\\Service\\TetePizza.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franc\\Desktop\\TetePizza\\Service\\TetePizza.Service.csproj",
+        "projectUniqueName": "D:\\TetePizza\\Service\\TetePizza.Service.csproj",
         "projectName": "TetePizza.Service",
-        "projectPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Service\\TetePizza.Service.csproj",
-        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Service\\obj\\",
+        "projectPath": "D:\\TetePizza\\Service\\TetePizza.Service.csproj",
+        "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
+        "outputPath": "D:\\TetePizza\\Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\S2-PC00\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\franc\\Desktop\\TetePizza\\Data\\TetePizza.Data.csproj": {
-                "projectPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Data\\TetePizza.Data.csproj"
+              "D:\\TetePizza\\Data\\TetePizza.Data.csproj": {
+                "projectPath": "D:\\TetePizza\\Data\\TetePizza.Data.csproj"
               },
-              "C:\\Users\\franc\\Desktop\\TetePizza\\Models\\TetePizza.Models.csproj": {
-                "projectPath": "C:\\Users\\franc\\Desktop\\TetePizza\\Models\\TetePizza.Models.csproj"
+              "D:\\TetePizza\\Models\\TetePizza.Models.csproj": {
+                "projectPath": "D:\\TetePizza\\Models\\TetePizza.Models.csproj"
               }
             }
           }
@@ -251,7 +286,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
