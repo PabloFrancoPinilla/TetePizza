@@ -1,5 +1,7 @@
 ﻿namespace TetePizza.Models;
 
+using System.ComponentModel.DataAnnotations;
+using System.Text;
     public class Pizza
     {
         public int Id { get; set; }

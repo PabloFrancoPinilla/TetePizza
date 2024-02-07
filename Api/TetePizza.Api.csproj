@@ -13,6 +13,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Service\TetePizza.Service.csproj" />
      <ProjectReference Include="..\Data\TetePizza.Data.csproj" />
+     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
