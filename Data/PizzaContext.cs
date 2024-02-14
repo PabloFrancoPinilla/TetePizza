@@ -13,21 +13,47 @@ namespace TetePizza.Data
 
         }
 
-      protected override void OnModelCreating(ModelBuilder modelBuilder) {
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+             modelBuilder.Entity<PizzaIngrediente>()
+                   .HasKey(pi => new { pi.PizzaId, pi.IngredienteId });
+
+            modelBuilder.Entity<PizzaIngrediente>()
+                .HasOne(pi => pi.Pizza)
+                .WithMany(p => p.PizzaIngredients)
+                .HasForeignKey(pi => pi.PizzaId);
+
+            modelBuilder.Entity<PizzaIngrediente>()
+                .HasOne(pi => pi.Ingrediente)
+                .WithMany(i => i.PizzaIngredients)
+                .HasForeignKey(pi => pi.IngredienteId);
+                
             modelBuilder.Entity<Pizza>().HasData(
-                new Pizza { Name = "Pepeorino", IsGlutenFree = true},
-                new Pizza { Name = "Bacon", IsGlutenFree = false}
+                new Pizza { Id = 1, Name = "Hawaiana", IsGlutenFree = true },
+                new Pizza { Id = 2, Name = "Barbacoa", IsGlutenFree = true }
             );
+
             modelBuilder.Entity<Ingrediente>().HasData(
-                new Ingrediente {  Name = "Cebolla", Origin="Vegetable", Stock = 100, Description = "Deposito inicial", IsVegan = true},
-                new Ingrediente {  Name = "Pepeorino", Origin="Animal", Stock = 100, Description = "Deposito", IsVegan= false},
-                new Ingrediente {  Name = "Tomato", Origin="Vegetal", Stock = 100, Description = "Retiro", IsVegan= true},
-                new Ingrediente {  Name = "Cheese", Origin="Animal", Stock = 100, Description = "Deposito", IsVegan=false}
+                new Ingrediente { Id = 1, Name = "Cebolla", Origin = "Vegetable", Stock = 100, Description = "Descripción de la cebolla", IsVegan = true },
+                new Ingrediente { Id = 2, Name = "Pepeorino", Origin = "Animal", Stock = 100, Description = "Descripción del pepeorino", IsVegan = false }
             );
+
+            modelBuilder.Entity<PizzaIngrediente>().HasData(
+                new PizzaIngrediente { PizzaId = 1, IngredienteId = 1 },
+                new PizzaIngrediente { PizzaId = 1, IngredienteId = 2 }
+              
+            );
+            /* 
+                        modelBuilder.Entity<Ingrediente>()
+                            .HasOne(ingrediente => ingrediente.Pizza)
+                            .WithMany(pizza => pizza.PizzaIngredients)
+                            .HasForeignKey(ingrediente => ingrediente.PizzaId); */
+
+           
         }
 
-        public DbSet<Pizza> Pizza { get; set; }
-        public DbSet<Ingrediente> Ingrediente { get; set; }
-       
+        public DbSet<Pizza> Pizzas { get; set; }
+        public DbSet<Ingrediente> Ingredientes { get; set; }
+
     }
 }

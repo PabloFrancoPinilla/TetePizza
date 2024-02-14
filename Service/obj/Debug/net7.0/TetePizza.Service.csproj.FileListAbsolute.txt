@@ -1,0 +1,17 @@
+C:\Users\franc\Desktop\TetePizza\Service\bin\Debug\net7.0\TetePizza.Service.deps.json
+C:\Users\franc\Desktop\TetePizza\Service\bin\Debug\net7.0\TetePizza.Service.dll
+C:\Users\franc\Desktop\TetePizza\Service\bin\Debug\net7.0\TetePizza.Service.pdb
+C:\Users\franc\Desktop\TetePizza\Service\bin\Debug\net7.0\TetePizza.Data.dll
+C:\Users\franc\Desktop\TetePizza\Service\bin\Debug\net7.0\TetePizza.Models.dll
+C:\Users\franc\Desktop\TetePizza\Service\bin\Debug\net7.0\TetePizza.Data.pdb
+C:\Users\franc\Desktop\TetePizza\Service\bin\Debug\net7.0\TetePizza.Models.pdb
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\TetePizza.Service.csproj.AssemblyReference.cache
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\TetePizza.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\TetePizza.Service.AssemblyInfoInputs.cache
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\TetePizza.Service.AssemblyInfo.cs
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\TetePizza.Service.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\TetePizza.Service.csproj.CopyComplete
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\TetePizza.Service.dll
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\refint\TetePizza.Service.dll
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\TetePizza.Service.pdb
+C:\Users\franc\Desktop\TetePizza\Service\obj\Debug\net7.0\ref\TetePizza.Service.dll

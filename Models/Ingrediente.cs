@@ -1,14 +1,26 @@
-namespace TetePizza.Models;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-public class Ingrediente
+
+namespace TetePizza.Models
 {
-    public int Id;
-    public string Name { get; set; }
-    public string Origin { get; set; }
-
-    public int? Stock { get; set; }
-    public string Description { get; set; }
-    public Boolean IsVegan { get; set; }
-    public int PizzaId{get;set;}
-    public Pizza Pizza {get;set;}
+    public class Ingrediente
+    {
+        [Key]
+         
+        public int Id { get; set; }
+        [Column (TypeName ="NVARCHAR(100)")]
+        [Required]
+        public string Name { get; set; }
+       
+        public string Origin { get; set; }
+        
+        public int? Stock { get; set; }
+        
+        public string Description { get; set; }
+       
+        public bool IsVegan { get; set; }
+        public List<PizzaIngrediente> PizzaIngredients { get; set; } 
+        public Ingrediente (){}
+    }
 }

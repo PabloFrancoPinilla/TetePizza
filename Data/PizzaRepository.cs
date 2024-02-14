@@ -18,8 +18,8 @@ public class PizzaRepository : IPizzaRepository
 
         Pizzas = new List<Pizza>
             {
-                new Pizza { Id = 1, Name = "Classic Italian", IsGlutenFree = false, PizzaIngredients = new List<Ingrediente> { tomato, cheese } },
-                new Pizza { Id = 2, Name = "Veggie", IsGlutenFree = true , PizzaIngredients = new List<Ingrediente> { tomato, onion }}
+          /*       new Pizza { Id = 1, Name = "Classic Italian", IsGlutenFree = false, PizzaIngredients = new List<Ingrediente> { tomato, cheese } },
+                new Pizza { Id = 2, Name = "Veggie", IsGlutenFree = true , PizzaIngredients = new List<Ingrediente> { tomato, onion }} */
             };
     }
 
